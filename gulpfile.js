@@ -80,7 +80,7 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("src/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("src/*.html").on("change", sync.reload);
+  gulp.watch("src/*.html").on("change", gulp.series("html", sync.reload));
 }
 
 const build = gulp.series(clean, copy, styles, html);

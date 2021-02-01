@@ -1,0 +1,38 @@
+.custom-checkbox {
+  label {
+    display: flex;
+    align-items: center;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #545454;
+
+    &:hover,
+    &:focus {
+      background-color: #998200;
+    }
+  }
+
+  input:checked + label {
+    color: #000000;
+    background-color: #ffd700;
+
+    .custom-checkbox__icon--type {
+      fill: #000000;
+    }
+  }
+}
+
+.custom-checkbox__icon {
+  height: 26px;
+  margin-right: 5px;
+
+  &--type {
+    height: 15px;
+
+    fill: #ffffff;
+  }
+}

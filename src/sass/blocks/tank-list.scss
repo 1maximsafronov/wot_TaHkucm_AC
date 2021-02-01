@@ -1,0 +1,40 @@
+.tank-list {
+
+}
+
+.tank-list__table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border-collapse: collapse;
+}
+
+.tank-list__head {
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.tank-list__head th {
+  padding: 10px;
+
+  border-right: 1px solid #545454;
+  background-color: #302f2d;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.tank-list__item {
+  text-align: center;
+  vertical-align: middle;
+
+  border-bottom: 1px solid #545454;
+
+  font-size: 14px;
+  line-height: 47px;
+}

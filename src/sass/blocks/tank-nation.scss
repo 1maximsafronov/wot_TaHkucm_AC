@@ -1,0 +1,42 @@
+.tank-nation {
+  display: block;
+
+  height: 47px;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  font-size: 0;
+
+  &--ussr {
+    background-image: url("../img/icon-ussr.svg");
+  }
+
+  &--france {
+    background-image: url("../img/icon-france.svg");
+  }
+
+  &--great-britain {
+    background-image: url("../img/icon-great-britain.svg");
+  }
+
+  &--italy {
+    background-image: url("../img/icon-italy.svg");
+  }
+
+  &--japan {
+    background-image: url("../img/icon-japan.svg");
+  }
+
+  &--poland {
+    background-image: url("../img/icon-poland.svg");
+  }
+
+  &--sweden {
+    background-image: url("../img/icon-sweden.svg");
+  }
+
+  &--usa {
+    background-image: url("../img/icon-usa.svg");
+  }
+}
