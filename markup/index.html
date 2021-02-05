@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header"></header>
+  <main class="container">
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <form action="" method="get" class="filter__form">
+        <section class="filter__section">
+          <h3 class="filter__title">Нация</h3>
+          <ul class="filter__list">
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-ussr">
+              <label for="nation-ussr">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#ea352d" d="M2 10H46V40H2z" />
+                  <path fill="gold" fill-rule="evenodd"
+                    d="M8.987,20l-2,2l1.22,1.293l1.053-1.028 c2.055,2.021,3.742,3.591,5.726,5.542c0.549,0.552,1.415-0.171,0.802-0.808c-2.096-1.979-3.549-3.435-5.733-5.51L11.487,20H8.987z"
+                    clip-rule="evenodd" />
+                  <path fill="gold" fill-rule="evenodd"
+                    d="M8.936,25.91c4.174,4.197,10.462-3.494,2.052-7.91 c6.463,6.909,0.593,9.064-1.742,6.906l-0.111-0.09c-0.09,0.099-0.18,0.198-0.269,0.298c-0.17-0.158-0.435-0.205-0.516,0.066 c-0.335-0.023-0.531,0.16-0.619,0.502c-0.622,0.406-1.296,0.762-1.684,1.4c-0.221,0.675,0.217,0.968,0.712,0.912 c0.812-0.332,1.063-1.05,1.497-1.642c0.307-0.096,0.567-0.226,0.615-0.501"
+                    clip-rule="evenodd" />
+                  <path fill="#ffd701" fill-rule="evenodd"
+                    d="M11 13.43L11.505 14.984 13.14 14.984 11.817 15.945 12.323 17.5 11 16.539 9.677 17.5 10.183 15.945 8.86 14.984 10.495 14.984z"
+                    clip-rule="evenodd" /></svg>
+                СССР
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-germany">
+              <label for="nation-germany">Германия</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-usa">
+              <label for="nation-usa">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#ECEFF1" d="M1.998 10H45.998V37H1.998z" />
+                  <path fill="#F44336" d="M2 10H46V13H2zM2 16H46V19H2zM2 22H46V25H2zM2 28H46V31H2zM2 34H46V37H2z" />
+                  <path fill="#3F51B5" d="M2 10H23V25H2z" />
+                  <g>
+                    <path fill="#FFF"
+                      d="M4.25 12L4.713 12.988 5.75 13.146 5 13.916 5.178 15 4.25 14.488 3.322 15 3.5 13.916 2.75 13.146 3.787 12.988zM8.25 12L8.713 12.988 9.75 13.146 9 13.916 9.178 15 8.25 14.488 7.322 15 7.5 13.916 6.75 13.146 7.787 12.988zM12.25 12L12.713 12.988 13.75 13.146 13 13.916 13.178 15 12.25 14.488 11.322 15 11.5 13.916 10.75 13.146 11.787 12.988zM16.25 12L16.713 12.988 17.75 13.146 17 13.916 17.178 15 16.25 14.488 15.322 15 15.5 13.916 14.75 13.146 15.787 12.988zM20 12L20.463 12.988 21.5 13.146 20.75 13.916 20.928 15 20 14.488 19.072 15 19.25 13.916 18.5 13.146 19.537 12.988zM4.25 20L4.713 20.988 5.75 21.146 5 21.916 5.178 23 4.25 22.488 3.322 23 3.5 21.916 2.75 21.146 3.787 20.988zM8.25 20L8.713 20.988 9.75 21.146 9 21.916 9.178 23 8.25 22.488 7.322 23 7.5 21.916 6.75 21.146 7.787 20.988zM12.25 20L12.713 20.988 13.75 21.146 13 21.916 13.178 23 12.25 22.488 11.322 23 11.5 21.916 10.75 21.146 11.787 20.988zM16.25 20L16.713 20.988 17.75 21.146 17 21.916 17.178 23 16.25 22.488 15.322 23 15.5 21.916 14.75 21.146 15.787 20.988zM20 20L20.463 20.988 21.5 21.146 20.75 21.916 20.928 23 20 22.488 19.072 23 19.25 21.916 18.5 21.146 19.537 20.988zM5.25 16L5.713 16.988 6.75 17.146 6 17.916 6.178 19 5.25 18.488 4.322 19 4.5 17.916 3.75 17.146 4.787 16.988zM9.25 16L9.713 16.988 10.75 17.146 10 17.916 10.178 19 9.25 18.488 8.322 19 8.5 17.916 7.75 17.146 8.787 16.988zM13.25 16L13.713 16.988 14.75 17.146 14 17.916 14.178 19 13.25 18.488 12.322 19 12.5 17.916 11.75 17.146 12.787 16.988zM17.25 16L17.713 16.988 18.75 17.146 18 17.916 18.178 19 17.25 18.488 16.322 19 16.5 17.916 15.75 17.146 16.787 16.988zM21 16L21.463 16.988 22.5 17.146 21.75 17.916 21.928 19 21 18.488 20.072 19 20.25 17.916 19.5 17.146 20.537 16.988z" />
+                  </g>
+                </svg>
+                США
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-china">
+              <label for="nation-china">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#FF3D00" d="M2 9L2 24 2 39 46 39 46 24 46 9z" />
+                  <path fill="#FFEB3B"
+                    d="M10 13.49L11.181 17.24 15 17.24 11.91 19.367 13.09 23 10 20.755 6.91 23 8.09 19.367 5 17.24 8.819 17.24zM17.474 10.976L17.828 12.101 18.974 12.101 18.047 12.737 18.401 13.828 17.474 13.154 16.547 13.828 16.901 12.737 15.974 12.101 17.12 12.101zM17.5 24L17.854 25.125 19 25.125 18.073 25.762 18.427 26.853 17.5 26.179 16.573 26.853 16.927 25.762 16 25.125 17.146 25.125zM21.5 15L21.854 16.125 23 16.125 22.073 16.762 22.427 17.853 21.5 17.179 20.573 17.853 20.927 16.762 20 16.125 21.146 16.125zM21.5 20L21.854 21.125 23 21.125 22.073 21.762 22.427 22.853 21.5 22.179 20.573 22.853 20.927 21.762 20 21.125 21.146 21.125z" />
+                </svg>
+                Китай
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-france">
+              <label for="nation-france">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#ECEFF1" d="M16 9H32V39H16z" />
+                  <path fill="#FF3D00" d="M32 9H46V39H32z" />
+                  <path fill="#3F51B5" d="M2 9H16V39H2z" /></svg>
+                Франция
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-great-britain">
+              <label for="nation-great-britain">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#3F51B5" d="M2 10H46V38H2z" />
+                  <path fill="#FFF" d="M2 14.216L22.81 26.935 25.939 21.815 6.608 10 2 10z" />
+                  <path fill="#FFF" d="M46 10L42.391 10 23.061 21.814 26.189 26.935 46 14.826z" />
+                  <path fill="#FFF" d="M26.189 20.271L23.061 25.391 43.691 38 46 38 46 32.379z" />
+                  <path fill="#FFF" d="M2 32.991L2 38 5.31 38 25.939 25.392 22.811 20.271z" />
+                  <path fill="#FFF" d="M2 20H46V28H2z" />
+                  <path fill="#FFF" d="M20 10H28V38H20z" />
+                  <g>
+                    <path fill="#E53935"
+                      d="M17.218 20L2 10.699 2 13.043 13.382 20zM44.309 10L27.947 20 31.782 20 46 11.311 46 10zM33.082 28L46 35.895 46 33.551 36.917 28zM15.918 28L2 36.506 2 38 3.392 38 19.753 28zM2 22H46V26H2z" />
+                    <path fill="#E53935" d="M22 10H26V38H22z" />
+                  </g>
+                </svg>
+                Великобритания
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-japan">
+              <label for="nation-japan">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#eceff1" d="M2 9H46V39H2z" />
+                  <path fill="#d50000" d="M24 15A9 9 0 1 0 24 33A9 9 0 1 0 24 15Z" /></svg>
+                Япония
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-czecho">
+              <label for="nation-czecho">Чехословакия</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-sweden">
+              <label for="nation-sweden">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#1976D2" d="M2 9H46V39H2z" />
+                  <path fill="#FFC107" d="M2 21H46V27H2z" />
+                  <path fill="#FFC107" d="M16 9H22V39H16z" /></svg>
+                Швеция
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-poland">
+              <label for="nation-poland">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#F44336" d="M2 24H46V39H2z" />
+                  <path fill="#ECEFF1" d="M2 9H46V24H2z" /></svg>
+                Польша
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="nation" id="nation-italy">
+              <label for="nation-italy">
+                <svg class="custom-checkbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <path fill="#ECEFF1" d="M16 9H32V39H16z" />
+                  <path fill="#FF3D00" d="M32 9H46V39H32z" />
+                  <path fill="#689F38" d="M2 9H16V39H2z" /></svg>
+                Италия
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="filter__section">
+          <h3 class="filter__title">Тип</h3>
+          <ul class="filter__list">
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="type" id="type-light-tank">
+              <label for="type-light-tank">
+                <svg class="custom-checkbox__icon custom-checkbox__icon--type" viewBox="0 0 11 13" fill="black"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 0L0 6.5L5.5 13L11 6.5L5.5 0Z" />
+                </svg>
+                Лёгкий танк
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="type" id="type-medium-tank">
+              <label for="type-medium-tank">
+                <svg class="custom-checkbox__icon custom-checkbox__icon--type" viewBox="0 0 12 15" fill="black"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 7.5L9.7 4.7L3.7 12.2L6 15L12 7.5ZM6 0L0 7.5L2.3 10.3L8.3 2.8L6 0Z" />
+                </svg>
+                Средний танк
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="type" id="type-hevy-tank">
+              <label for="type-hevy-tank">
+                <svg class="custom-checkbox__icon custom-checkbox__icon--type" viewBox="0 0 15 18" fill="black"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.2 6.80005L5.7 15.9L7.5 18L15 9.00005L13.2 6.80005Z" />
+                  <path d="M10.3 3.40002L2.9 12.5L4.7 14.6L12.1 5.60002L10.3 3.40002Z" />
+                  <path d="M7.5 0L0 9L1.9 11.2L9.3 2.2L7.5 0Z" />
+                </svg>
+                Тяжёлый танк
+              </label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="type" id="type-pt-sau">
+              <label for="type-pt-sau">ПТ-САУ</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="type" id="type-sau">
+              <label for="type-sau">САУ</label>
+            </li>
+          </ul>
+        </section>
+        <section class="filter__section">
+          <h3 class="filter__title">Уровень</h3>
+          <ul class="filter__list">
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-1">
+              <label for="lvl-1">I</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-2">
+              <label for="lvl-2">II</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-3">
+              <label for="lvl-3">III</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-4">
+              <label for="lvl-4">IV</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-5">
+              <label for="lvl-5">V</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-6">
+              <label for="lvl-6">VI</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-7">
+              <label for="lvl-7">VII</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-8">
+              <label for="lvl-8">VIII</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-9">
+              <label for="lvl-9">IX</label>
+            </li>
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="lvl" id="lvl-10">
+              <label for="lvl-10">X</label>
+            </li>
+          </ul>
+        </section>
+        <section class="filter__section">
+          <h3 class="filter__title">Другое</h3>
+          <ul class="filter__list">
+            <li class="custom-checkbox">
+              <input class="visually-hidden" type="checkbox" name="additional" id="additional-premium-tank">
+              <label for="additional-premium-tank">Премиум техника</label>
+            </li>
+          </ul>
+        </section>
+      </form>
+    </section>
+    <section class="tank-list">
+      <h2 class="visually-hidden">Список танков</h2>
+      <table class="tank-list__table">
+        <tr class="tank-list__head">
+          <th>Нация</th>
+          <th>Тип</th>
+          <th>Уровень</th>
+          <th>Название</th>
+          <th>Оборудование</th>
+          <th>Инструкции</th>
+          <th>Боновое оборудование</th>
+        </tr>
+        <tr class="tank-list__item tank-item">
+          <td class="tank-item__nation">
+            <span class="tank-nation tank-nation--ussr">USSR</span>
+          </td>
+          <td clas="tank-item__type">
+            <span class="tank-type tank-type--light">light</span>
+          </td>
+          <td class="tank-item__lvl">
+            <span class="tank-lvl-4">IV</span>
+          </td>
+          <td class="tank-item__name">
+            Chrysler K GF
+          </td>
+          <td class="tank-item__equipment"></td>
+          <td class="tank-item__instructions"></td>
+          <td class="tank-item__bon-equipment"></td>
+        </tr>
+        <tr class="tank-list__item tank-item tank-item--premium">
+          <td class="tank-item__nation">
+            <span class="tank-nation tank-nation--usa">USA</span>
+          </td>
+          <td clas="tank-item__type">
+            <svg class="tank-type" width="15" height="18" viewBox="0 0 15 18" fill="black"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.2 6.80005L5.7 15.9L7.5 18L15 9.00005L13.2 6.80005Z" />
+              <path d="M10.3 3.40002L2.9 12.5L4.7 14.6L12.1 5.60002L10.3 3.40002Z" />
+              <path d="M7.5 0L0 9L1.9 11.2L9.3 2.2L7.5 0Z" />
+            </svg>
+          </td>
+          <td class="tank-item__lvl">
+            <span class="tank-lvl-4">IV</span>
+          </td>
+          <td class="tank-item__name">
+            Chrysler K GF
+          </td>
+          <td class="tank-item__equipment">
+            <img class="equipment equipment--improved-vantilation" src="img/icon-improved-ventilation.png" height="47">
+            <img src="img/aiming-stabilizer.png" alt="" height="47">
+            <img src="img/rammer.png" alt="" height="47">
+          </td>
+          <td class="tank-item__instructions"></td>
+          <td class="tank-item__bon-equipment"></td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <footer class="page-footer"></footer>
+
+</body>
+
+</html>

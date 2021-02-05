@@ -12,3 +12,7 @@ src/css/*.css
 src/css/*.map
 Thumbs.db
 build/
+
+node_modules/
+public/bundle.js
+public/bundle.js.map
