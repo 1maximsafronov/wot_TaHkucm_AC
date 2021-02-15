@@ -1,0 +1,54 @@
+.equipment {
+  position: relative;
+
+  max-width: 100%;
+  min-height: 100%;
+
+  background-color: rgba(#545454, 0.3);
+
+  &--empty {
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      display: block;
+
+      content: "+";
+      transform: translate(-50%, -50%);
+
+      opacity: 0.5;
+
+      font-size: 30px;
+    }
+  }
+
+  &:hover {
+    .equipment__desc {
+      display: block;
+    }
+  }
+}
+
+.equipment__preview {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+
+.equipment__picture {
+  display: block;
+
+  max-width: 100%;
+  margin: auto;
+}
+
+.equipment__desc {
+  position: absolute;
+  top: -100%;
+
+  display: none;
+
+  background-color: #545454;
+}

@@ -1,6 +1,17 @@
 .tank-item {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
   &--premium {
     color: #ffd700;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(#545454, 0.3);
   }
 }
 
@@ -11,8 +22,48 @@
   justify-content: center;
 }
 
+.tank-item__name {
+  margin: 0;
+  padding: 0;
+}
+
 .tank-item__equipment {
-  display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.tank-item__equipment-list {
+  display: flex;
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  list-style: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tank-item__equipment-item {
+  width: 48px;
+  height: 48px;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tank-item__directive {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.tank-item__directive-item {
+  width: 48px;
+  height: 48px;
 }

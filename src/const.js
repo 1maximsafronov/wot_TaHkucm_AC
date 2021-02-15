@@ -104,5 +104,12 @@ export const listData = {
       value: `10`,
       label: `X`
     }
+  ],
+  aditinal: [
+    {
+      name: `aditinal`,
+      value: `premium`,
+      label: `Премиум`
+    }
   ]
 };

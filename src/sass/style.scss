@@ -12,9 +12,16 @@ html {
 
 body {
   min-width: 320px;
+  margin: 0;
+  padding: 0;
 
   color: white;
   background-color: #000000;
+  background-image: url("../img/bg-page.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0%;
+  background-size: cover;
 
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
@@ -27,7 +34,9 @@ img {
 
 @import "blocks/visually-hidden.scss";
 @import "blocks/container.scss";
+@import "blocks/page-header.scss";
 @import "blocks/custom-checkbox.scss";
+@import "blocks/page-title.scss";
 @import "blocks/filter.scss";
 @import "blocks/tank-list.scss";
 @import "blocks/tank-item.scss";

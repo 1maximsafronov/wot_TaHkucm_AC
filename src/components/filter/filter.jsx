@@ -11,9 +11,7 @@ const Filter = () => {
         <FilterSection title="Нация" list={listData.nation}/>
         <FilterSection title="Тип" list={listData.type}/>
         <FilterSection title="Уровень" list={listData.lvl}/>
-        {/*
-
-        <FilterSection title="Дополнительно" /> */}
+        <FilterSection title="Дополнительно" list={listData.aditinal} />
       </form>
     </section>
   );
