@@ -5,7 +5,7 @@ import {listData} from "../../const";
 const Filter = () => {
 
   return (
-    <section className="filter">
+    <section className="filter container">
       <h2 className="visually-hidden">Фильтр</h2>
       <form action="" method="get" className="filter__form">
         <FilterSection title="Нация" list={listData.nation}/>

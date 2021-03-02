@@ -1,16 +1,19 @@
 import React, {Fragment} from "react";
 import Filter from "../filter/filter";
 import TanksList from "../tanks-list/tanks-list";
+import PageHeader from "../page-header/page-header";
+import PageFooter from "../page-footer/page-footer";
+
 const App = () => {
   return (
     <Fragment>
-      <header className="page-header"></header>
-      <main className="container">
+      <PageHeader />
+      <main className="">
         <h1 className="page-title">Сборки оборудования 2.0</h1>
         <Filter/>
         <TanksList />
       </main>
-      <footer className="page-footer"></footer>
+      <PageFooter />
     </Fragment>
   );
 };

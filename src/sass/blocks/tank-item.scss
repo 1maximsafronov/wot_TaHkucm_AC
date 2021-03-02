@@ -1,10 +1,4 @@
 .tank-item {
-  display: flex;
-  justify-content: space-around;
-
-  padding-top: 5px;
-  padding-bottom: 5px;
-
   &--premium {
     color: #ffd700;
   }
@@ -15,6 +9,13 @@
   }
 }
 
+.tank-item__wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 .tank-item__type {
   display: flex;
